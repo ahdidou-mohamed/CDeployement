@@ -13,7 +13,7 @@ public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		
+
 		final String LOG_TAG = "MainScreen";  
 		super.onCreate(savedInstanceState);  
 		setContentView(R.layout.activity_main);  
@@ -21,9 +21,9 @@ public class MainActivity extends Activity {
 		final EditText value2 = (EditText) findViewById(R.id.value2);  
 		final TextView result = (TextView) findViewById(R.id.result);  
 		Button addButton = (Button) findViewById(R.id.addValues);  
-		
+
 		if (true) {
-			
+
 		}
 		addButton.setOnClickListener(new OnClickListener() {  
 			public void onClick(View v) {  
@@ -49,7 +49,23 @@ public class MainActivity extends Activity {
 					Log.e(LOG_TAG, "Failed to multiply numbers", e);  
 				}  
 			}  
-		});  }
+		});
+		
+		Button substructButton = (Button) findViewById(R.id.substructValues);  
+		substructButton.setOnClickListener(new OnClickListener() {  
+			public void onClick(View v) {  
+				try {  
+					int val1 = Integer.parseInt(value1.getText().toString());  
+					int val2 = Integer.parseInt(value2.getText().toString());  
+					Integer answer = val1 - val2;  
+					result.setText(answer.toString());  
+				} catch (Exception e) {  
+					Log.e(LOG_TAG, "Failed to multiply numbers", e);  
+				}  
+			}  
+		});
+
+	}
 
 	public float addValues(float a, float b) {
 

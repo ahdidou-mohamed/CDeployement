@@ -84,6 +84,14 @@
             android:text="Multiply"
             android:textSize="32px" >
         </Button>
+
+        <Button
+            android:id="@+id/substructValues"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Substruct"
+            android:textSize="32px" >
+        </Button>
     </LinearLayout>
 
 </LinearLayout>
