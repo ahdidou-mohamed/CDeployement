@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="0" timestamp="1391094869642" analysisTimestamp="1391094869658" release="">
+  <Project projectName="">
+    <Jar>/Users/ahdidou/Documents/Projects Mobiblanc/ContinuousDeployement/workspace/CDeployement/bin</Jar>
+    <AuxClasspathEntry>/Users/ahdidou/Documents/Projects Mobiblanc/ContinuousDeployement/workspace/CDeployement/${android.jar}</AuxClasspathEntry>
+  </Project>
+  <Errors errors="1" missingClasses="6">
+    <Error>
+      <ErrorMessage>Cannot open codebase filesystem:/Users/ahdidou/Documents/Projects Mobiblanc/ContinuousDeployement/workspace/CDeployement/${android.jar}</ErrorMessage>
+      <Exception>java.io.FileNotFoundException: File /Users/ahdidou/Documents/Projects Mobiblanc/ContinuousDeployement/workspace/CDeployement/${android.jar} doesn&apos;t exist</Exception>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassFactory.createFilesystemCodeBase(ClassFactory.java:107)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.FilesystemCodeBaseLocator.openCodeBase(FilesystemCodeBaseLocator.java:75)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.processWorkList(ClassPathBuilder.java:596)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.classfile.impl.ClassPathBuilder.build(ClassPathBuilder.java:220)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.buildClassPath(FindBugs2.java:779)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.execute(FindBugs2.java:217)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs.runMain(FindBugs.java:391)</StackTrace>
+      <StackTrace>edu.umd.cs.findbugs.FindBugs2.main(FindBugs2.java:1298)</StackTrace>
+    </Error>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.widget.Button</MissingClass>
+    <MissingClass>android.widget.EditText</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Thu, 30 Jan 2014 15:14:29 +0000" total_classes="13" referenced_classes="24" total_bugs="0" total_size="101" num_packages="1" vm_version="24.45-b08" cpu_seconds="5.62" clock_seconds="2.12" peak_mbytes="95.31" alloc_mbytes="1820.50" gc_seconds="0.03">
+    <PackageStats package="com.ahdidou.cdeployement" total_bugs="0" total_types="13" total_size="101">
+      <ClassStats class="com.ahdidou.cdeployement.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.MainActivity" sourceFile="MainActivity.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.MainActivity$1" sourceFile="MainActivity.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.MainActivity$2" sourceFile="MainActivity.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$attr" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$dimen" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$drawable" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$id" sourceFile="R.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$layout" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$menu" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$string" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.ahdidou.cdeployement.R$style" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="402" invocations="328" avgMicrosecondsPerInvocation="1227" maxMicrosecondsPerInvocation="18503" standardDeviationMircosecondsPerInvocation="2602"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="107" invocations="288" avgMicrosecondsPerInvocation="373" maxMicrosecondsPerInvocation="5225" standardDeviationMircosecondsPerInvocation="715"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="95" invocations="24" avgMicrosecondsPerInvocation="3970" maxMicrosecondsPerInvocation="22902" standardDeviationMircosecondsPerInvocation="7264"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="91" invocations="28" avgMicrosecondsPerInvocation="3274" maxMicrosecondsPerInvocation="89607" standardDeviationMircosecondsPerInvocation="16614"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="69" invocations="24" avgMicrosecondsPerInvocation="2875" maxMicrosecondsPerInvocation="13990" standardDeviationMircosecondsPerInvocation="4714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="64" invocations="331" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="610" standardDeviationMircosecondsPerInvocation="64"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="55" invocations="17" avgMicrosecondsPerInvocation="3285" maxMicrosecondsPerInvocation="52529" standardDeviationMircosecondsPerInvocation="12313"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="36" invocations="34" avgMicrosecondsPerInvocation="1068" maxMicrosecondsPerInvocation="18762" standardDeviationMircosecondsPerInvocation="3236"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="34" invocations="68" avgMicrosecondsPerInvocation="512" maxMicrosecondsPerInvocation="2192" standardDeviationMircosecondsPerInvocation="529"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="33" invocations="24" avgMicrosecondsPerInvocation="1400" maxMicrosecondsPerInvocation="8721" standardDeviationMircosecondsPerInvocation="2721"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="32" invocations="17" avgMicrosecondsPerInvocation="1926" maxMicrosecondsPerInvocation="14641" standardDeviationMircosecondsPerInvocation="3598"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="30" invocations="24" avgMicrosecondsPerInvocation="1252" maxMicrosecondsPerInvocation="6170" standardDeviationMircosecondsPerInvocation="1948"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="27" invocations="17" avgMicrosecondsPerInvocation="1644" maxMicrosecondsPerInvocation="13010" standardDeviationMircosecondsPerInvocation="3064"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="27" invocations="17" avgMicrosecondsPerInvocation="1640" maxMicrosecondsPerInvocation="9530" standardDeviationMircosecondsPerInvocation="2519"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="27" invocations="24" avgMicrosecondsPerInvocation="1158" maxMicrosecondsPerInvocation="9664" standardDeviationMircosecondsPerInvocation="2228"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
