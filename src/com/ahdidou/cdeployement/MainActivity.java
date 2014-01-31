@@ -1,6 +1,7 @@
 package com.ahdidou.cdeployement;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -59,6 +60,21 @@ public class MainActivity extends Activity {
 					int val2 = Integer.parseInt(value2.getText().toString());  
 					Integer answer = val1 - val2;  
 					result.setText(answer.toString());  
+				} catch (Exception e) {  
+					Log.e(LOG_TAG, "Failed to multiply numbers", e);  
+				}  
+			}  
+		});
+		
+		Button showNextButton = (Button) findViewById(R.id.showNext);  
+		showNextButton.setOnClickListener(new OnClickListener() {  
+			public void onClick(View v) {  
+				try {  
+					
+					Intent intent = new Intent(MainActivity.this, MainAsynkActivity.class);
+					
+					startActivity(intent);
+					
 				} catch (Exception e) {  
 					Log.e(LOG_TAG, "Failed to multiply numbers", e);  
 				}  
